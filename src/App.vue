@@ -1,16 +1,20 @@
 <template>
-  <main>
-    <header>Zhang Rongchuan</header>
-    <section>
-      <p>Hello and welcome to my personal site! I'm passionate about applied mathematics, web development, and beautiful dresses 🌸</p>
-      <p>This site is currently under construction — please check back later!</p>
-      <p>You can also visit my <a href="https://github.com/zhangrongchuan" target="_blank">GitHub profile</a>.</p>
-    </section>
-  </main>
+  <h1 class="text-3xl font-bold text-blue-600 text-center mt-10">
+    Tailwind CSS is working!
+  </h1>
 </template>
 
+
 <script setup>
+// 没有逻辑部分暂时为空
 </script>
 
-<style scoped>
+<style>
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadein {
+  animation: fadein 0.8s ease-out;
+}
 </style>
