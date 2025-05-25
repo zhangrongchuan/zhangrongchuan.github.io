@@ -74,12 +74,18 @@ html, body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* 可展开/收起侧边栏 */
 .sidebar {
-  width: 80px;
+  width: 50px;               /* 默认收起宽度 */
   background: #111;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+.sidebar:hover {
+  width: 80px;               /* 悬停时展开 */
 }
 
 .sidebar ul {
@@ -135,17 +141,17 @@ html, body {
 }
 .text-block .btn-cv {
   padding: 0.8rem 2rem;
-  background: #777;      /* 灰色背景 */
+  background: #777;
   border: none;
   border-radius: 50px;
-  color: #fff;          /* 白色文字 */
+  color: #fff;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
 }
 .text-block .btn-cv:hover {
-  background: #fff;      /* 悬停白底 */
-  color: #777;           /* 白底灰字 */
+  background: #fff;
+  color: #777;
 }
 
 .image-block {
@@ -170,6 +176,9 @@ html, body {
     flex-direction: row;
     justify-content: space-around;
     padding: 1rem 0;
+  }
+  .sidebar:hover {
+    width: 100%;
   }
   .main-content {
     flex-direction: column;
