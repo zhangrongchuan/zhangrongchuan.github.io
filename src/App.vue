@@ -169,16 +169,7 @@ html, body {
 /* 响应式：手机及小屏幕 */
 @media (max-width: 768px) {
   #app {
-    flex-direction: column;
-  }
-  .sidebar {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1rem 0;
-  }
-  .sidebar:hover {
-    width: 100%;
+    flex-direction: row;      /* 保持 sidebar 左侧 */
   }
   .main-content {
     flex-direction: column;
