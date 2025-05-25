@@ -108,7 +108,6 @@ function downloadCV() {
   font-size: 1.5rem;
 }
 
-
 .main-content {
   flex: 1;
   display: flex;
@@ -123,6 +122,18 @@ function downloadCV() {
   justify-content: center;
   padding: 4rem;
   color: #eee;
+}
+
+.text-block .role {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #ccc;
+}
+/* 在这里插入 */
+.text-block .description {
+  margin: 1.5rem 0;
+  line-height: 1.6;
+  color: #9e9e9e; /* 高级灰色 */
 }
 
 .image-block {
