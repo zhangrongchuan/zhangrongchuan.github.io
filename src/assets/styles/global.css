@@ -1,0 +1,47 @@
+/* global.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #1a1a1a;
+  }
+  #app {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* 按钮、响应式等全局通用样式 */
+  .btn-cv {
+    padding: 0.8rem 2rem;
+    background: #777;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  .btn-cv:hover {
+    background: #fff;
+    color: #777;
+  }
+  
+  /* 响应式：手机及小屏幕 */
+  @media (max-width: 768px) {
+    #app {
+      flex-direction: row; /* 保持 sidebar 左侧 */
+    }
+    .main-content {
+      flex-direction: column;
+    }
+    .text-block, .image-block {
+      flex: none;
+      width: 100%;
+      height: auto;
+      padding: 2rem;
+    }
+    .image-block img {
+      max-height: 300px;
+    }
+  }
+  
