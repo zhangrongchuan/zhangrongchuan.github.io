@@ -159,4 +159,29 @@ html, body {
   height: 100%;
   object-fit: cover;
 }
+
+/* 响应式：手机及小屏幕 */
+@media (max-width: 768px) {
+  #app {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+  .text-block, .image-block {
+    flex: none;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+  .image-block img {
+    max-height: 300px;
+  }
+}
 </style>
