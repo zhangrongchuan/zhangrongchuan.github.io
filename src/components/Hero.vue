@@ -1,12 +1,12 @@
 <template>
-  <section class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8">
+  <section class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 py-12">
     <!-- 文本部分 -->
     <div>
-      <p class="text-sm text-yellow-400 mb-2">👋 Hello, My name is</p>
+      <p class="text-sm text-yellow-400 mb-2">👋 Hello, I'm</p>
       <h1 class="text-4xl md:text-5xl font-bold mb-4">Zhang Rongchuan</h1>
       <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-        I'm a Computer Science master's student specializing in algorithms, deep learning, and autonomous systems.
-        Passionate about creating elegant technical solutions and expressive digital experiences.
+        I'm a CS master's student focusing on deep learning, large models, and autonomous systems.
+        Passionate about building intelligent and elegant digital experiences.
       </p>
       <a
         href="/cv.pdf"
@@ -29,5 +29,4 @@
 </template>
 
 <script setup>
-// 这里目前无逻辑，可加入动画或响应后续增强
 </script>
