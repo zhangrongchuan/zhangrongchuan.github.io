@@ -1,7 +1,7 @@
 <!-- 在你的 ProjectSection.vue 或其它地方： -->
 <template>
   <section class="project-section">
-    <h2 class="section-title">我的精选项目</h2>
+    <h2 class="section-title">My Projects</h2>
     <div class="projects-grid">
       <a
         v-for="project in projects"
